@@ -276,17 +276,22 @@ header .navbar-toggler:focus{
     margin-bottom: 71px;
 }
 .gallery .gallery-picture{
-    margin-bottom: 0;
-    background: linear-gradient(to right, rgba(31, 219, 132, 0.35), rgba(31, 219, 132, 0.35));
+    margin-bottom: 0;   
 }
 .gallery .gallery-picture .zoom-img{
-    display: none;
-}
-.gallery .gallery-picture:hover .zoom-img{
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(to right, rgba(31, 219, 132, 0.35), rgba(31, 219, 132, 0.35));
+}
+.gallery .gallery-picture:hover .zoom-img{
     background: linear-gradient(to right, rgba(31, 219, 132, 0.74), rgba(31, 219, 132, 0.74));
+}
+.gallery .gallery-picture .zoom-img a{
+    display: none;
+}
+.gallery .gallery-picture:hover .zoom-img a{
+    display: inline;
 }
 
 /*client start*/
